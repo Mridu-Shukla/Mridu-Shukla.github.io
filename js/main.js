@@ -1,4 +1,5 @@
-var preloader = document.getElementById("loading");
+var preloader = document.getElementById("loader-wrapper");
+// var banner =/ document.
              function myfunction(){
                  preloader.style.display = 'none';
              }
@@ -6,8 +7,17 @@ var mybtn = document.getElementById("gototop");
 var header = document.getElementById("default-header");
 var scrolled =0;
 $(document).ready(function(){
-  
-  $(window).on('resize',function(){location.reload();});
+   var w= $(window).width();
+   var h = $(window).height();
+   console.log(h);
+  $(window).on('resize',function(){
+     if($(window).height()< h-100 || $(window).height() > h+100 || $(window).width() > w +100 || $(window).width() < w -100){
+       h = $(window).height();
+       w = $(window).width();
+    //    console.log(w);
+       location.reload();
+     }
+    });
 
   $(window).scroll(function(){
     if(document.body.scrollTop>100 ||  document.documentElement.scrollTop >100){

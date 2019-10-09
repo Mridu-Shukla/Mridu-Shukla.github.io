@@ -6,6 +6,18 @@ body {
     line-height: 1.625em;
     position: relative;
 }
+
+#loader-wrapper{
+  position: fixed;
+  background:  #189c13;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* left: 0;
+  right: 0; */
+  z-index: 1000;
+  /* margin-left: 0px; */
+}
 #loading {
     position: fixed;
     left: 50%;
@@ -14,8 +26,11 @@ body {
   border-radius: 50%;
   border-top: 10px solid blue;
   background: #fff transparent ;
+  /* background-color: #fff; */
   width: 70px;
   height: 70px;
+  /* -webkit-transition: all 0.3s ease-out; 
+            transition: all 0.3s ease-out; */
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   z-index: 99999;
