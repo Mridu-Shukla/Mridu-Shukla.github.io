@@ -11,7 +11,7 @@ $(document).ready(function(){
    var h = $(window).height();
    console.log(h);
   $(window).on('resize',function(){
-     if($(window).height()< h-400 || $(window).height() > h+100 || $(window).width() > w +100 || $(window).width() < w -100){
+     if($(window).width() > w +100 || $(window).width() < w -100){
        h = $(window).height();
        w = $(window).width();
     //    console.log(w);
