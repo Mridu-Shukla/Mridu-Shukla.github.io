@@ -53,7 +53,7 @@ body {
   border-radius: 25px;
   border: none;
   /* color: gray; */
-  display: inline-block;
+  display: block;
   font-weight: 500;
   position: relative;
   -webkit-transition: all 0.3s ease 0s;
@@ -73,6 +73,12 @@ body {
     background-color: #fff;
     color: #189c13 !important;
     
+}
+
+@media screen and (max-width:991px){
+  .btn{
+    margin: auto;
+  }
 }
 .banner-area, .default-header {
     background-image: -moz-linear-gradient(0deg, #66e070 0%,  #189c13 100%);
@@ -104,6 +110,12 @@ body {
 .h1 span{
   font-weight: 800;
 
+}
+
+@media screen and (max-width: 991px){
+  .h1{
+    text-align: center;
+  }
 }
 .section-gap {
   padding: 100px 0px;
@@ -414,11 +426,10 @@ body {
 .img2{
   height: 350px;
   width: 400px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
   padding: 20px;
-
-
 }
+
 .p1{
   text-align: center;
   left: 2000px;
@@ -438,9 +449,14 @@ body {
 } */
 .d1{
   /* padding: 20px; */
-  height: 100%;
+  height: 100vh;
 }
 
+@media screen and (max-width:991px){
+  .d1{
+    height: 150vh;
+  }
+}
 
 
 .btn1{
@@ -450,7 +466,7 @@ body {
   border-radius: 25px;
   border: none;
   /* color: gray; */
-  display: inline-block;
+  /* display: inline-block; */
   font-weight: 500;
   position: relative;
   /* -webkit-transition: all 0.3s ease 0s;
@@ -602,4 +618,8 @@ body {
   line-height: 30px;
   padding: 30px;
 }
-
+ @media screen and (max-width:991px){
+   .intro, .detail, .text-black{
+     text-align: center;
+   }
+ }

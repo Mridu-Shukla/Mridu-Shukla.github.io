@@ -12,7 +12,7 @@ $(document).ready(function(){
    console.log(h);
   $(window).on('resize',function(){
      if($(window).width() > w +100 || $(window).width() < w -100){
-       h = $(window).height();
+      //  h = $(window).height();
        w = $(window).width();
     //    console.log(w);
        location.reload();
