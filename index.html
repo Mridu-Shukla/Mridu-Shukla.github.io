@@ -6,6 +6,7 @@
             <meta name="description" content="My Resume">
             <!-- Meta Keyword -->
             <meta name="keywords" content="mridu,mridu shukla,mridushukla99,github mridu">
+            <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script|Monoton|Mr+Dafoe&display=swap" rel="stylesheet">
             <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,7 +24,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="css/style.css">
     </head>
-    <body onload="myfunction()">
+    <body onload="myfunction()" data-hijacking="off" data-animation = "parallax">
         
         <div id="loader-wrapper"><div id= 'loading'></div></div>
         
@@ -74,7 +75,7 @@
                              I'm an undergraduate pursuing Computer Science and Engineering at VIT Chennai.
                             </p>
                             <br>
-                            <button type="button" class="btn big wide smooth-scroll-middle">My Resume</button>
+                            <a class="button btn big wide smooth-scroll-middle" href="index.html">My Resume</a>
                         </div>
                         
                     </div>    
@@ -82,7 +83,7 @@
         </div>
         <br>
         </section>
-        <section class="skill-area section-gap jumbotron-fluid" id="skills">
+        <section class="skill-area section-gap jumbotron-fluid" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" id="skills">
                 <div class="container">
                         <div class="title text-center">
                                 <h1 class="mb-10">My Skills</h1>
@@ -94,7 +95,9 @@
                                 </p>
                         </div>
                     
-                            <div class="card">
+                            <div class="card" data-aos="fade-right"
+                            data-aos-duration="1000"
+                            data-aos-easing="linear">
                                     <div class="card-header">
                                      FRONT-END
                                     </div>
@@ -136,7 +139,9 @@
                                                 </div>
                                           </div>
                                   </div>
-                                 <div class="card">
+                                 <div class="card" data-aos="fade-left"
+                                 data-aos-duration="1000"
+                                 data-aos-easing="linear">
                                         <div class="card-header">
                                           JAVASCRIPT
                                         </div>
@@ -177,7 +182,9 @@
                                                     </div>
                                               </div>
                                       </div>
-                                      <div class="card">
+                                      <div class="card" data-aos="fade-right"
+                                      data-aos-duration="1000"
+                                      data-aos-easing="linear">
                                             <div class="card-header">
                                               BACK-END
                                             </div>
@@ -218,7 +225,9 @@
                                                         </div>
                                                   </div>
                                           </div>
-                                          <div class="card">
+                                          <div class="card" data-aos="fade-left"
+                                          data-aos-duration="1000"
+                                          data-aos-easing="linear">
                                                 <div class="card-header">
                                                   LANGUAGES
                                                 </div>
@@ -267,7 +276,9 @@
                                                             </div>
                                                       </div>
                                               </div>
-                                              <div class="card">
+                                              <div class="card" data-aos="fade-right"
+                                              data-aos-duration="1000"
+                                              data-aos-easing="linear">
                                                     <div class="card-header">
                                                       OTHER
                                                     </div>
@@ -306,7 +317,7 @@
                    
                 </div>
 </section>
-        <section class="about-area section-gap" id ='about'>
+        <section class="about-area section-gap"  data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear"id ='about'>
                 <div class="container">
                         <div class="row d-flex justify-content-center">
                             <div class="menu-content pb-70 col-lg-8">
@@ -318,7 +329,7 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-12 about-left justify-content-center d-flex">
-                                <img class="img-fluid img2" src="images/about.png" alt="about me">
+                                <img class="img-fluid img2" data-aos="zoom-in" data-aos-duration="3000" src="images/about.png" alt="about me">
                         </div>
                             <div class="col-lg-6 col-md-12 about-left detail">
                                     <p>I am a curios and enthusiastic learner,  and always very focused towards  my academics and maximizing my learning experiences. I find it exciting in applying my intellectual curiosity to solve the real world problems in an efficient manner. I also love to explore and learn various other technical frameworks trending.</p>
@@ -334,7 +345,7 @@
                     <div class="container">
                             <div class="row d-flex justify-content-center">
                                     <div class="menu-content pb-70 col-lg-8">
-                                        <section class="s1">
+                                        <section class="s1" data-aos="fade-up" data-aos-duration="2000">
                                                 <h6 class="p2">
                                                         BACHELOR OF TECHNOLOGY IN COMPUTER SCIENCE AND ENGINEERING (B.Tech CSE)
                                                     </h6>
@@ -345,7 +356,7 @@
                                                 
                                         </section>
                                         <br>
-                                        <section class="s1">
+                                        <section class="s1" data-aos="fade-up" data-aos-duration="2000">
                                             <h6 class="p2">
                                                 INDIAN SCHOOL CERTIFICATE (ISC)
                                             </h6>
@@ -354,7 +365,7 @@
                                                     <p><span>Percentage:</span>  97%</p>
                                         </section>
         
-                                    <section class="s1">
+                                    <section class="s1" data-aos="fade-up" data-aos-duration="2000">
                                                     <h6 class="p2">
                                                             INDIAN CERTIFICATE OF SECONDARY EXAMINATION (ICSE)
                                                         </h6>
@@ -369,15 +380,15 @@
                 <br>
                 <br>
                 <div class="container">
-                        <h1 class="mb-11 text-center">Achievements and Certifications</h1>
-                        <section class="detail s1">
+                        <h1 class="mb-11 text-center justify-content-center align-items-center">Achievements and Certifications</h1>
+                        <section class="detail s2 justify-content-center align-items-center" data-aos="zoom-in" data-aos-duration="2000">
                                     <p>I was awarded <strong>Academic Excellence Award</strong> for securing 10th rank in Computer Science and Engineering Branch for Fall-Semester 2018-19</p>                               
                         </section>
                 </div>
 
         </section>
         
-        <section class="project-area section-gap " id='project'>
+        <section class="project-area section-gap " data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" id='project'>
             <!-- <div class="jumbotron"> -->
                     <div class="container">
                             <div class="row d-flex justify-content-center">
@@ -388,7 +399,9 @@
                                                 <br>
                                             </p>
                                         </div>
-                                        <section class="sp1">
+                                        <section class="sp1" data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000">
                                                 <h5 class="p1">
                                                         VITShelf
                                                     </h5>
@@ -397,7 +410,9 @@
                                             </div>
                                                 <p class="info">It is a J Component Project for CSE2004. It is build using Android Studio.</p>
                                         </section>
-                                        <section class="sp1">
+                                        <section class="sp1" data-aos="flip-left"
+                                        data-aos-easing="ease-out-cubic"
+                                        data-aos-duration="2000">
                                             <h5 class="p1">
                                                 Predictive Keyboard
                                             </h5>
@@ -425,35 +440,44 @@
                             
             </div>
         </section>
-        <section class="contact-area section-gap" id="contact">
+        <section class="contact-area section-gap" data-aos="fade-up" data-aos-duration="1000" data-aos-easing="linear" id="contact">
                 <!-- <div class="jumbotron"> -->
                     <div class="container">
                             
                         <h1 class="mb-10 text-center">Contact Me</h1>
-                        <p class="text-center"><span class="lnr lnr-phone-handset"></span>    +91 6389 7010 88</p>
-                        <p class="text-center"><span class="lnr lnr-envelope"></span>    mridushukla99@gmail.com</p>
+                        <p class="text-center" id="phone"><span class="lnr lnr-phone-handset"></span>    +91 6389 7010 88</p>
+                        <p class="text-center" id= "mail"><span class="lnr lnr-envelope"></span>    mridushukla99@gmail.com</p>
                         <br>
                         <br>
+                        <!-- <h1 class="mb-10 text-center message">Message Me</h1> -->
                         <div class="row justify-content-center d-flex ">
+                            
                         <div class="col-lg-6 col-md-12 d-flex contact-form">
+                            
                                 <form action="https://formspree.io/xnenqvnm" method="POST">
+                                    <h1 class="mb-10 text-center message">Message Me</h1>
                                     <div class="form-group">
                                         <label for="name" id='l1'>Name</label>
-                                        <input type="text" class="form-control" name="name" id="name" value="" required/>
+                                        <input type="text" class="form-control" name="name" id="name" value="" placeholder="Your full name" required/>
                                     </div>
                                     <div class="form-group">
-                                            <label for="email" id="l1">Email address</label>
-                                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                                            <label for="email" id="l1">Email</label>
+                                            <input type="email" class="form-control" id="email" placeholder="Your email address" required>
                                           </div>
                                         
                                           <div class="form-group">
-                                                <label for="comment" id="l1">Comment</label>
-                                                <textarea class="form-control" id="comment" rows="8"></textarea>
+                                                <label for="comment" id="l1">Your Message</label>
+                                                <textarea class="form-control" id="comment" rows="8" placeholder="Type your message here"></textarea>
                                               </div>
                                     <button type="submit" class="btn1 big wide smooth-scroll-middle"><span>Send Message</span></button>
                                 </form>
                         
                     </div>
+                    <div class="col-lg-6 col-md-12 d-flex ">
+                            
+                        <div id="googleMap" style="width:100%;height:600px; padding: 20px;"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.040785878599!2d80.1512396147692!3d12.840640990941838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5259af8e491f67%3A0x944b42131b757d2d!2sVIT%20Chennai!5e0!3m2!1sen!2sin!4v1571155578434!5m2!1sen!2sin" width="100%" height="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe></div>
+                     </div>
+
                 </div>
                             
                     </div>
@@ -496,10 +520,17 @@
   src="https://code.jquery.com/jquery-3.4.1.js"
   integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
   crossorigin="anonymous"></script>
+  
+
             <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
             <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
-            <script src="js/jquery.sticky.js"></script>	    
+            <script src="js/jquery.sticky.js"></script>	   
+            <script src="js/jquery.stellar.min.js"></script> 
             <script src="js/owl.carousel.min.js"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+            <script>
+                AOS.init();
+              </script>
         <script src="js/main.js"></script>	
     </body>
 </html>

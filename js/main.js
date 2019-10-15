@@ -3,11 +3,13 @@ var preloader = document.getElementById("loader-wrapper");
              function myfunction(){
                  preloader.style.display = 'none';
              }
+
 var mybtn = document.getElementById("gototop");
 var header = document.getElementById("default-header");
 var scrolled =0;
 $(document).ready(function(){
-   var w= $(window).width();
+  
+	   var w= $(window).width();
    var h = $(window).height();
    console.log(h);
   $(window).on('resize',function(){
